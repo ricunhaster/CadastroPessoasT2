@@ -26,14 +26,14 @@ namespace CadastroPessoasT2
 
           //Console.WriteLine($"Nome : {novaPf.nome}");
           //Console.WriteLine($"Endereço : {novaPf.endereco.logradouro}");
-          //Console.WriteLine($"{novaPf.ValidarDataNascimento(novaPf.dataNascimento)}");
+          //Console.WriteLine($"{pfMetodos.ValidarDataNascimento(novaPf.dataNascimento)}");
          
           Console.WriteLine(@$"
 Nome : {novaPf.nome}
 CPF : {novaPf.cpf}
 Endereço : {novaPf.endereco.logradouro} , {novaPf.endereco.numero}
 Complemento : {novaPf.endereco.complemento}
-Rendimento : {novaPf.rendimento}
+
 ");
           
             

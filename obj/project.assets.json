@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ricun\\Desktop\\CadastroPessoasT2\\CadastroPessoasT2.csproj",
+      "projectUniqueName": "C:\\Users\\ricun\\Desktop\\CadastroPessoasT2 - ER3\\CadastroPessoasT2.csproj",
       "projectName": "CadastroPessoasT2",
-      "projectPath": "C:\\Users\\ricun\\Desktop\\CadastroPessoasT2\\CadastroPessoasT2.csproj",
+      "projectPath": "C:\\Users\\ricun\\Desktop\\CadastroPessoasT2 - ER3\\CadastroPessoasT2.csproj",
       "packagesPath": "C:\\Users\\ricun\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ricun\\Desktop\\CadastroPessoasT2\\obj\\",
+      "outputPath": "C:\\Users\\ricun\\Desktop\\CadastroPessoasT2 - ER3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

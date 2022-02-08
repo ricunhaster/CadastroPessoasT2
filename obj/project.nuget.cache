@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Xcx/VY+A3U0QUI0E+4Uf1rwJe1u00aT8p8kHcATqsFAV3p5y8e2LINa8NGpXnK8GH1wLuhulZCMo7riqCHN/sQ==",
+  "dgSpecHash": "vaZ3nIuOMif7wcflUFmOh8UJ5iTXl26QS2t5GuEgpynIBXxHisj3ExP1fEh23h9L7SKDcrBEEViorVpC3bjkTg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ricun\\Desktop\\CadastroPessoasT2\\CadastroPessoasT2.csproj",
+  "projectFilePath": "C:\\Users\\ricun\\Desktop\\CadastroPessoasT2 - ER3\\CadastroPessoasT2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ricun\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
   ],
