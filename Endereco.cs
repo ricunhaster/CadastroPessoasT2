@@ -14,7 +14,6 @@ namespace CadastroPessoasT2
         public string complemento { get; set; }
         
         public bool enderecoComercial { get; set; }
-        
-         
+                 
     }
 }
