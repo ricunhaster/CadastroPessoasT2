@@ -13,7 +13,7 @@ namespace CadastroPessoasT2
 |     Bem vindo ao sistema de cadastro de      |
 |     Pessoas Físicas e Pessoas Jurídicas      |
 ================================================       
-        ");
+");
 
             BarraCarregamento("Carregando");
             Console.ResetColor();
