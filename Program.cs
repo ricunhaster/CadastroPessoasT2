@@ -43,9 +43,9 @@ namespace CadastroPessoasT2
                         Endereco novoEndPf = new Endereco();
 
                         novaPf.nome = "Ricardo";
-                        novaPf.dataNascimento = new DateTime(2018, 01, 01);
+                        novaPf.dataNascimento = new DateTime(2000, 01, 01);
                         novaPf.cpf = "1234567890";
-                        novaPf.rendimento = 5000.35f;
+                        novaPf.rendimento = 3000.35f;
 
 
                         novoEndPf.logradouro = "Avenida Paulista";
@@ -59,8 +59,9 @@ Nome : {novaPf.nome}
 CPF : {novaPf.cpf}
 Endereço : {novaPf.endereco.logradouro} , {novaPf.endereco.numero}
 Complemento : {novaPf.endereco.complemento}
-Maior de 18 anos : {pfMetodos.ValidarDataNascimento(novaPf.dataNascimento)}
+Maior de 18 anos : {(pfMetodos.ValidarDataNascimento(novaPf.dataNascimento) ? "Sim" : "Não")}
 Rendimento : {novaPf.rendimento}
+Taxa de imposto a ser paga: {pfMetodos.PagarImposto(novaPf.rendimento).ToString("C")}
 ");
                         //Thread.Sleep(3000);
                         Console.WriteLine($"Digite 'Enter' para continuar");
@@ -85,22 +86,24 @@ Rendimento : {novaPf.rendimento}
                         novoEndPj.enderecoComercial = true;
 
                         novaPj.endereco = novoEndPj;
+                        //string cnpjValido = pjMetodos.ValidarCnpj(novaPj.cnpj) ? "Válido" : "Inválido";
 
-
-                        //Console.WriteLine(novaPj.validarCnpj("12345678000134"));
+                        //Console.WriteLine(novaPj.ValidarCnpj("12345678000134"));
                         Console.WriteLine(@$"
 Nome : {novaPj.nome}
 Razão Social : {novaPj.razaoSocial}
 CNPJ : {novaPj.cnpj}
-CNPJ Válido : {pjMetodos.validarCnpj(novaPj.cnpj)}
+CNPJ Válido : {(pjMetodos.ValidarCnpj(novaPj.cnpj) ? "Válido" : "Inválido")}
 Endereço : {novaPj.endereco.logradouro} , {novaPj.endereco.numero}
 Complemento : {novaPj.endereco.complemento}
 Rendimento : {novaPj.rendimento}
-
+Taxa de imposto a ser pago : {pjMetodos.PagarImposto(novaPj.rendimento).ToString("C")}
 
 
 ");
-                        Thread.Sleep(3000);
+                        //Thread.Sleep(3000);
+                        Console.WriteLine($"Digite 'Enter' para continuar");
+                        Console.ReadLine();
                         break;
 
                     case "0":
