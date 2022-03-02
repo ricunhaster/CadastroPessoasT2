@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace CadastroPessoasT2
 {
@@ -7,6 +9,8 @@ namespace CadastroPessoasT2
         public string cpf { get; set; }
         
         public DateTime dataNascimento  { get; set; }
+
+        public string caminho { get; private set; } = "Database/Pessoa Fisica.csv";
 
         public override float PagarImposto(float rendimento)
         {
@@ -44,6 +48,44 @@ namespace CadastroPessoasT2
             }   
 
             return false;
+        }
+
+            public string PreparaLinhaCsv(PessoaFisica pf)
+        {
+             return $"{pf.nome};{pf.cpf};{pf.rendimento}";
+        }
+
+        public void Inserir(PessoaFisica pf)
+        {
+            string[] linhas = {PreparaLinhaCsv(pf)};  
+              
+            File.AppendAllLines(caminho, linhas);
+        }
+
+        public List<PessoaFisica> Ler()
+        {
+        
+            List<PessoaFisica> listaPf = new List<PessoaFisica>();
+
+            string[] linhas = File.ReadAllLines(caminho);
+
+            foreach (string cadaLinha in linhas)
+            {
+                
+                string[] atributos = cadaLinha.Split(";");
+
+                PessoaFisica cadaPf = new PessoaFisica();
+                
+                cadaPf.nome = atributos[0];
+                cadaPf.cpf = atributos[1];
+                cadaPf.rendimento = float.Parse(atributos[2]);
+
+                
+                listaPf.Add(cadaPf);
+
+            }
+
+            return listaPf;      
             
         }    
     }

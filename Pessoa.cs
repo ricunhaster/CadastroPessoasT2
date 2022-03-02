@@ -1,3 +1,5 @@
+using System.IO;
+
 namespace CadastroPessoasT2
 {
     public abstract class Pessoa
@@ -9,6 +11,22 @@ namespace CadastroPessoasT2
         public float rendimento { get; set; }
 
         public abstract float PagarImposto(float rendimento);
+
+        public void VerificaPastaArquivo(string caminho)
+        {
+            string pasta = caminho.Split("/")[0];
+            if (!Directory.Exists(pasta))
+            {
+                Directory.CreateDirectory(pasta);
+            }
+            
+            if (!File.Exists(caminho))
+            {    
+                using (File.Create(caminho));
+               
+            }
+            
+        }
         
     }
 }
