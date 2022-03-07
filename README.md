@@ -20,8 +20,8 @@ Projeto de criação de sistema de cadastro para empresa fictícia ClientLab
 - Download do pacote CadastroPessoasT2 tag ER-8 (https://github.com/ricunhaster/CadastroPessoasT2/tags)
 
 # Execução da aplicação
-- Descompactar o arquivo CadastroPessoasT2 no diretório para teste no computador.
-- Executar a pasta do projeto com o Visual Code Studio
+- Descompactar o arquivo CadastroPessoasT2-ER-8 no diretório para teste no computador.
+- Abrir a pasta CadastroPessoasT2-ER-8 com o Visual Code Studio.
 - Abrir o Terminal bash do Visual Code Studio, digitar dotnet run e teclar enter.
 
 # Erros comuns
