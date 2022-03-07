@@ -14,7 +14,6 @@ Projeto de criação de sistema de cadastro para empresa fictícia ClientLab
 - O cronograma para o desenvolvimento do projeto foi gerado na ferramenta de gestão de projetos Trello. 
 - Desenvolvimento remoto devido à pandemia Covid-19.
 
-
 # Pré-requisitos de instalação
 - Sistema Operacional com suporte à Framework .Net 5.0
 - Visual Code Studio 
