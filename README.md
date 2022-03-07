@@ -11,14 +11,14 @@ Modelagem em draw.io
 Desenvolvimento em C#
 
 # Organização do projeto
-
+O cronograma para o desenvolvimento do projeto foi gerado na ferramenta de gestão de projetos Trello. 
+Desenvolvimento remoto devido à pandemia Covid-19.
 
 
 # Pré-requisitos de instalação
-Sistem Operacional Windows recente
-Framework .Net 5.0
+Sistema Operacional com suporte à Framework .Net 5.0
 Visual Code Studio 
-Arquivo .zip do pacote CadastroPessoasT2
+Download do pacote CadastroPessoasT2 tag ER-8
 
 # Execução da aplicação
 Descompactar o arquivo CadastroPessoasT2.zip no diretório C:\Arquivo de Programas
